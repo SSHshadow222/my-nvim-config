@@ -1,4 +1,4 @@
-# My Neovim Config
+# My Neovim Config 📝
 
 My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 
@@ -6,6 +6,7 @@ My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 
 - Plugin manager: lazy.nvim
 - LSP (C++, TypeScript, Python, Lua, HTML, CSS, JSON)
+- Language-specific editor configuration
 - Autocompletion (nvim-cmp)
 - Git integration (gitsigns)
 - Telescope
@@ -18,16 +19,17 @@ My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 .
 ├── init.lua
 ├── lazy-lock.json
-└── lua/
-    ├── config/
-    │   ├── diagnostic.lua
-    │   ├── lazy.lua
-    │   └── lsp/
-    └── plugins/
+├── lua
+│   ├── config
+│   │   ├── diagnostic.lua
+│   │   ├── lang/
+│   │   ├── lazy.lua
+│   │   └── lsp/
+│   └── plugins/
+└── README.md
 ```
 
 ## Installation
-
 ```shell
 git clone https://github.com/SSHshadow222/my-nvim-config ~/.config/nvim
 nvim
