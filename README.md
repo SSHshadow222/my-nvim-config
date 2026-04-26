@@ -12,6 +12,20 @@ My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 - nvim-tree
 - Themes (GitHub, Tokyonight)
 
+## Structure
+
+```shell
+.
+├── init.lua
+├── lazy-lock.json
+└── lua/
+    ├── config/
+    │   ├── diagnostic.lua
+    │   ├── lazy.lua
+    │   └── lsp/
+    └── plugins/
+```
+
 ## Installation
 
 ```shell
