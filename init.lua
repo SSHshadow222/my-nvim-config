@@ -1,14 +1,14 @@
-vim.o.tabstop = 2                          -- Number of spaces a <Tab> counts for.
-vim.o.shiftwidth = 2                       -- Size of an indent.
-vim.o.expandtab = true                     -- Use spaces instead of tabs.
-vim.o.smarttab = true                      -- Insert indents on start of line according to shiftwidth.
-vim.o.autoindent = true                    -- Copy indent from current line when starting a new one.
-vim.o.list = true                          -- Show some invisible characters.
-vim.o.listchars = "trail:·"                -- Show trailing spaces as '#'.
-vim.o.number = true                        -- Show line numbers.
+vim.o.tabstop = 2 -- Visual width (in spaces) of a real tab character (\t)
+vim.o.shiftwidth = 2 -- Number of spaces used for indentation (e.g., >>, <<, etc.)
+vim.o.expandtab = true -- Insert spaces instead of real tab characters when pressing <Tab>
+vim.o.autoindent = true -- Copy indentation from the current line when starting a new one
+vim.o.list = true -- Show invisible characters (e.g., trailing spaces)
+vim.o.listchars = "trail:·" -- Display trailing spaces as '·'
+vim.o.number = true -- Show line numbers
 
 require("config.lazy")
 require("config.lsp")
+require("config.lang")
 require("config.diagnostic")
 
 vim.cmd.colorscheme("tokyonight")
