@@ -2,6 +2,29 @@
 
 My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 
+## Requirements
+
+- [Neovim >= 0.9](https://neovim.io/doc/install/)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/download)
+- [A Nerd Font (optional)](https://www.nerdfonts.com/)
+
+## Installation
+
+### macOS / Linux
+
+```shell
+git clone https://github.com/SSHshadow222/my-nvim-config ~/.config/nvim
+nvim
+```
+
+### Windows
+
+```shell
+git clone https://github.com/SSHshadow222/my-nvim-config %LOCALAPPDATA%\nvim
+nvim
+```
+
 ## Features
 
 - Plugin manager: lazy.nvim
@@ -28,10 +51,3 @@ My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 │   └── plugins/
 └── README.md
 ```
-
-## Installation
-```shell
-git clone https://github.com/SSHshadow222/my-nvim-config ~/.config/nvim
-nvim
-```
-
