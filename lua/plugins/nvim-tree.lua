@@ -9,6 +9,10 @@ return {
       sync_root_with_cwd = true,
       diagnostics = {
         enable = false,
+      },
+      filters = {
+        git_ignored = false,
+        dotfiles = false,
       }
     })
 
