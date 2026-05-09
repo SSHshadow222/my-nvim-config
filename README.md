@@ -36,6 +36,27 @@ nvim
 - nvim-tree
 - Themes (GitHub, Tokyonight)
 
+## Keymaps
+
+| Keymap | Action |
+|---|---|
+| `<leader>ff` | Find files |
+| `<leader>fg` | Live grep |
+| `<leader>fb` | List open buffers |
+| `<leader>fh` | Search help tags |
+| `<leader>d` | Show diagnostics |
+| `<leader>tt` | Toggle nvim-tree |
+| `<leader>to` | Open nvim-tree |
+| `<leader>tff` | Reveal current file in nvim-tree |
+| `<leader>tr` | Reload nvim-tree |
+| `<leader>tc` | Collapse nvim-tree |
+| `<leader>gp` | Preview git hunk |
+| `<leader>gb` | Git blame |
+| `<leader>gtclb` | Toggle current line blame |
+| `<CR>` | Confirm completion item |
+| `<Tab>` | Select next completion item |
+| `<S-Tab>` | Select previous completion item |
+
 ## Structure
 
 ```shell
