@@ -1,4 +1,4 @@
-# My Neovim Config 📝
+# My Neovim Config
 
 My personal Neovim configuration that uses lazy.nvim as a plugin manager.
 
