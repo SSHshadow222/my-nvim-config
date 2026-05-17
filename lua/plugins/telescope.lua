@@ -1,9 +1,16 @@
+local is_windows = vim.uv.os_uname().sysname:find("Windows") ~= nil
+
 return {
   "nvim-telescope/telescope.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope-ui-select.nvim",
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = is_windows
+        and "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release"
+        or "make",
+    },
   },
   config = function()
     -- Setting Keymaps for Telescope
