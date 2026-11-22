@@ -11,4 +11,4 @@ require("config.lsp")
 require("config.lang")
 require("config.diagnostic")
 
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme(vim.env.NVIM_COLORSCHEME or "default")
